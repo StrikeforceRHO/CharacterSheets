@@ -1,14 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <stdint.h>
-#include <inttypes.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <sys/time.h>
-#include <time.h>
-#include <errno.h>
-#include <math.h>
 #include <string.h>
 
 int git_commit(char *pdf) {
@@ -21,7 +13,7 @@ int git_commit(char *pdf) {
 	}
 	fclose(f);
 	char commit[4096];
-	sprintf(commit, "git add -u ; git commit -m \"Modifies %s character sheet after last session\" ; git push origin master", pdf);
+	sprintf(commit, "git pull --rebase origin master ; git add -u ; git commit -m \"Modifies %s character sheet after last session\" ; git push origin master", pdf);
 	int result = system(commit);
 	if(!result) {
 		printf("Changes to %s committed successfully.\n", pdf);
