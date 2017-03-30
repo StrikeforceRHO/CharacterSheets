@@ -15,7 +15,7 @@ else {
 open(INPUT, $pdf) or die("Could not find $pdf. Please make sure $pdf is in the current directory.");
 close(INPUT);
 
-my $result = system("git pull --rebase origin master ; git add -A . ; git commit -m \"Modifies $pdf after last session\" ; git push origin master");
+my $result = system("git add -A . ; git commit -m \"Modifies $pdf after last session\" ; git pull --rebase origin master ; git push origin master");
 if(!$result) {
 	print("Changes to $pdf committed successfully.\n");
 }
