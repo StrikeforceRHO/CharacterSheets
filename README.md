@@ -1,7 +1,17 @@
+<style>
+pre {
+	background: black;
+	color: #00ff00;
+	font-weight: bold;
+	padding: 10px;
+	max-width: 100%;
+}
+</style>
+
 # CharacterSheets
 This is where all your character sheets will be.
 
-
+<pre>
 user@machine MINGW64 ~
 $ git clone https://github.com/StrikeforceRHO/CharacterSheets.git ./jeese_campaign                                                                                                                                                                                           gn
 Cloning into './jeese_campaign'...
@@ -47,3 +57,4 @@ $ git status
 On branch master
 Your branch is up-to-date with 'origin/master'.
 nothing to commit, working tree clean
+</pre>
