@@ -18,6 +18,8 @@ user@machine MINGW64 ~
 #This downloads the whole repository to your computer.
 #In this example, we are downloading the character sheets repository into
 #the directory "jeese_campaign" which you can rename to anything you like.
+#Please don't use spaces in the directory name if you decide to change it.
+#git will not like you if you do.
 $ git clone https://github.com/StrikeforceRHO/CharacterSheets.git ./jeese_campaign                                                                                                                                                                                           gn
 Cloning into './jeese_campaign'...
 remote: Counting objects: 56, done.
@@ -30,12 +32,12 @@ user@machine MINGW64 ~
 $ cd ./jeese_campaign/
 
 user@machine MINGW64 ~
-#We configure git to use our Github username.
+#We configure git to use our GitHub username.
 #Include the quotes.
 $ git config --global user.name "my_github_username"
 
 user@machine MINGW64 ~
-#We configure git to use our Github email address.
+#We configure git to use our GitHub email address.
 #Again, include the quotes.
 $ git config --global user.email "my_email_i_used_for_github@site.com"
 
@@ -71,7 +73,7 @@ user@machine MINGW64 ~/jeese_campaign (master)
 #Remember to include the .pdf extension, and you can
 #change the name of your file to something else
 #but please don't use spaces.
-#I don't not like file names with spaces.
+#I don't like file names with spaces.
 $ perl commit.pl old_man.pdf
 On branch master
 Your branch is up-to-date with 'origin/master'.
