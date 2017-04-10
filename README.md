@@ -8,6 +8,8 @@ First download and install <a href=https://git-for-windows.github.io/>Git for Wi
 Use all the default options during the installation unless you, surprisingly, know what you're doing.
 After Git for Windows is installed, run Git Bash from your Start Menu.
 Once Git Bash is running, copy and paste each command below (commands are only on lines with a $, do not copy the $).
+To paste, right click and click "Paste" on the dropdown menu.
+Typing CTRL+v means something different in this stripped-down Linux environment than it does in Windows.
 Hit ENTER after copying each command, modifying any obvious section such as: "my_github_username" to use your own username.
 
 I have included comments before each command to give you some insight into what it does.
